@@ -11,7 +11,9 @@ $ sudo apt install libgstreamer1.0-0 gstreamer1.0-plugins-base gstreamer1.0-plug
 
 $ gcc gstreamer_basic_01.c -o gstreamer_basic_01 \`pkg-config --cflags --libs gstreamer-1.0\`
 
-## Local test - test pattern
+## Example
+
+#### test pattern
 $ gst-launch-1.0 videotestsrc pattern=XXXX ! video/x-raw, width=800, height=480 ! autovideosink <br>
  <br>
 where pattern is <br>
