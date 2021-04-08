@@ -1,4 +1,4 @@
-# gstream
+# gstreamer
 
 Tested under Ubuntu 20.04 64bits.
 
