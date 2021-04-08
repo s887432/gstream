@@ -24,6 +24,36 @@ $ ./autogen.sh <br>
 
 $ make <br>
 
+#### Local test - test pattern
+$ gst-launch-1.0 videotestsrc pattern=XXXX ! video/x-raw, width=800, height=480 ! autovideosink <br>
+ <br>
+where pattern is <br>
+smpte (0) – SMPTE 100%% color bars <br>
+snow (1) – Random (television snow) <br>
+black (2) – 100%% Black <br>
+white (3) – 100%% White <br>
+red (4) – Red <br>
+green (5) – Green <br>
+blue (6) – Blue <br>
+checkers-1 (7) – Checkers 1px <br>
+checkers-2 (8) – Checkers 2px <br>
+checkers-4 (9) – Checkers 4px <br>
+checkers-8 (10) – Checkers 8px <br>
+circular (11) – Circular <br>
+blink (12) – Blink <br>
+smpte75 (13) – SMPTE 75%% color bars <br>
+zone-plate (14) – Zone plate <br>
+gamut (15) – Gamut checkers <br>
+chroma-zone-plate (16) – Chroma zone plate <br>
+solid-color (17) – Solid color <br>
+ball (18) – Moving ball <br>
+smpte100 (19) – SMPTE 100%% color bars <br>
+bar (20) – Bar <br>
+pinwheel (21) – Pinwheel <br>
+spokes (22) – Spokes <br>
+gradient (23) – Gradient <br>
+colors (24) – Colors <br>
+
 ##### Launch RTSP Server
 $ cd example <br>
 $ ./test-launch "( videotestsrc ! x264enc ! rtph264pay name=pay0 pt=96 )" <br>
