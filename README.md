@@ -31,4 +31,4 @@ $ ./test-launch "( videotestsrc ! x264enc ! rtph264pay name=pay0 pt=96 )" <br>
 ##### client command
 $ gst-launch-1.0 playbin uri=rtsp://127.0.0.1:8554/test <br>
 
-Patrick Lin
+#Patrick Lin @ Taipei
