@@ -18,17 +18,17 @@ $ gcc gstreamer_basic_01.c -o gstreamer_basic_01 \`pkg-config --cflags --libs gs
 $ libgstreamer1.0-dev libgstreamer-plugins-base1.0-dev gtk-doc-tools
 
 ###### get source code and compile
-$ git clone git://anongit.freedesktop.org/gstreamer/gst-rtsp-server
-$ cd gst-rtsp-server
-$ ./autogen.sh
+$ git clone git://anongit.freedesktop.org/gstreamer/gst-rtsp-server <br>
+$ cd gst-rtsp-server <br>
+$ ./autogen.sh <br>
 
-$ make
+$ make <br>
 
 ##### Launch RTSP Server
-$ cd example
-$ ./test-launch "( videotestsrc ! x264enc ! rtph264pay name=pay0 pt=96 )"
+$ cd example <br>
+$ ./test-launch "( videotestsrc ! x264enc ! rtph264pay name=pay0 pt=96 )" <br>
 
 ##### client command
-$ gst-launch-1.0 playbin uri=rtsp://127.0.0.1:8554/test
+$ gst-launch-1.0 playbin uri=rtsp://127.0.0.1:8554/test <br>
 
 Patrick Lin
