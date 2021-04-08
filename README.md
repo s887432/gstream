@@ -11,19 +11,6 @@ $ sudo apt install libgstreamer1.0-0 gstreamer1.0-plugins-base gstreamer1.0-plug
 
 $ gcc gstreamer_basic_01.c -o gstreamer_basic_01 \`pkg-config --cflags --libs gstreamer-1.0\`
 
-## RTSP Server under ubuntu 2020.04
-
-##### enviromnent setup
-
-$ libgstreamer1.0-dev libgstreamer-plugins-base1.0-dev gtk-doc-tools
-
-###### get source code and compile
-$ git clone git://anongit.freedesktop.org/gstreamer/gst-rtsp-server <br>
-$ cd gst-rtsp-server <br>
-$ ./autogen.sh <br>
-
-$ make <br>
-
 #### Local test - test pattern
 $ gst-launch-1.0 videotestsrc pattern=XXXX ! video/x-raw, width=800, height=480 ! autovideosink <br>
  <br>
@@ -53,6 +40,19 @@ pinwheel (21) – Pinwheel <br>
 spokes (22) – Spokes <br>
 gradient (23) – Gradient <br>
 colors (24) – Colors <br>
+
+## RTSP Server under ubuntu 2020.04
+
+##### enviromnent setup
+
+$ sudo apt-get install -y libgstreamer1.0-dev libgstreamer-plugins-base1.0-dev gtk-doc-tools
+
+###### get source code and compile
+$ git clone git://anongit.freedesktop.org/gstreamer/gst-rtsp-server <br>
+$ cd gst-rtsp-server <br>
+$ ./autogen.sh <br>
+
+$ make <br>
 
 ##### Launch RTSP Server
 $ cd example <br>
