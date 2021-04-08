@@ -28,7 +28,7 @@ $ make <br>
 $ cd example <br>
 $ ./test-launch "( videotestsrc ! x264enc ! rtph264pay name=pay0 pt=96 )" <br>
 
-##### Client command
+##### <font color="blue">Client command</font>
 $ gst-launch-1.0 playbin uri=rtsp://127.0.0.1:8554/test <br>
 
 # Patrick Lin @ Taipei
