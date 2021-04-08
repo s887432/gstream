@@ -11,7 +11,7 @@ $ sudo apt install libgstreamer1.0-0 gstreamer1.0-plugins-base gstreamer1.0-plug
 
 $ gcc gstreamer_basic_01.c -o gstreamer_basic_01 \`pkg-config --cflags --libs gstreamer-1.0\`
 
-## RTSP Server under ubunto 2020.04
+## RTSP Server under ubuntu 2020.04
 
 ##### enviromnent setup
 
