@@ -15,6 +15,10 @@ $ gcc gstreamer_basic_01.c -o gstreamer_basic_01 \`pkg-config --cflags --libs gs
 
 #### test pattern
 $ gst-launch-1.0 videotestsrc pattern=XXXX ! video/x-raw, width=800, height=480 ! autovideosink <br>
+
+#### show test pattern on framebuffer
+$ gst-launch-1.0 videotestsrc pattern=XXXX ! video/x-raw, width=800, height=480 ! sink <br>
+
  <br>
 where pattern is <br>
 smpte (0) – SMPTE 100%% color bars <br>
