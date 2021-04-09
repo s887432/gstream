@@ -17,7 +17,7 @@ $ gcc gstreamer_basic_01.c -o gstreamer_basic_01 \`pkg-config --cflags --libs gs
 $ gst-launch-1.0 videotestsrc pattern=XXXX ! video/x-raw, width=800, height=480 ! autovideosink <br>
 
 #### show test pattern on framebuffer
-$ gst-launch-1.0 videotestsrc pattern=XXXX ! video/x-raw, width=800, height=480 ! sink <br>
+$ gst-launch-1.0 videotestsrc pattern=XXXX ! video/x-raw, width=800, height=480 ! fbdevsink <br>
 
  <br>
 where pattern is <br>
