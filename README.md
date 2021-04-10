@@ -47,6 +47,13 @@ spokes (22) – Spokes <br>
 gradient (23) – Gradient <br>
 colors (24) – Colors <br>
 
+#### play streaming demo video
+$ gst-launch-1.0 playbin uri=https://www.freedesktop.org/software/gstreamer-sdk/data/media/sintel_trailer-480p.webm
+
+#### with subtitle
+$ gst-launch-1.0 playbin uri=https://www.freedesktop.org/software/gstreamer-sdk/data/media/sintel_trailer-480p.webm suburi=https://www.freedesktop.org/software/gstreamer-sdk/data/media/sintel_trailer_gr.srt
+
+
 ## RTSP Server under ubuntu 2020.04
 
 ##### enviromnent setup
