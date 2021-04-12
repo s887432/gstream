@@ -60,6 +60,8 @@ where <br>
 device=/dev/video0 can be ignored if only one camera available <br>
 autovideosink can be xvimagesink <br>
  
+#### 16:9 
+$ gst-launch-1.0 v4l2src device=/dev/video0 ! video/x-raw, format=YUY2,width=640,height=480,frame=30/1 ! aspectratiocrop aspect-ratio=16/9 ! videoconvert ! autovideosink <br>
 
 ## RTSP Server under ubuntu 2020.04
 
