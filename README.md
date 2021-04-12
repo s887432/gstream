@@ -54,7 +54,7 @@ $ gst-launch-1.0 playbin uri=https://www.freedesktop.org/software/gstreamer-sdk/
 $ gst-launch-1.0 playbin uri=https://www.freedesktop.org/software/gstreamer-sdk/data/media/sintel_trailer-480p.webm suburi=https://www.freedesktop.org/software/gstreamer-sdk/data/media/sintel_trailer_gr.srt
 
 #### display camera
-$ gst-launch-1.0 v4l2src device=/dev/video0 ! video/x-raw, format=YUY2,width=640,height=480,frame=30/1 ! queue2 ! videorate ! videoscale ! videoconvert ! autovideosink <br>
+$ gst-launch-1.0 v4l2src device=/dev/video0 ! video/x-raw, format=YUY2,width=640,height=480,frame=30/1 ! videoconvert ! autovideosink <br>
 
 where <br>
 device=/dev/video0 can be ignored if only one camera available <br>
