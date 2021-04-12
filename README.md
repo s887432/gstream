@@ -72,6 +72,7 @@ $ sudo apt-get install -y libgstreamer1.0-dev libgstreamer-plugins-base1.0-dev g
 ###### get source code and compile
 $ git clone git://anongit.freedesktop.org/gstreamer/gst-rtsp-server <br>
 $ cd gst-rtsp-server <br>
+$ 
 $ ./autogen.sh <br>
 
 $ make <br>
