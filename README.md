@@ -64,6 +64,11 @@ autovideosink can be xvimagesink <br>
 $ gst-launch-1.0 v4l2src device=/dev/video0 ! video/x-raw, format=YUY2,width=640,height=480,frame=30/1 ! aspectratiocrop aspect-ratio=16/9 ! videoconvert ! autovideosink <br>
 $ gst-launch-1.0 v4l2src device=/dev/video0 ! video/x-raw, format=YUY2,width=640,height=480,frame=30/1 ! aspectratiocrop aspect-ratio=16/9 ! videoconvert ! videoscale ! video/x-raw,width=800,height=480 ! autovideosink <br>
 
+#### display on LCD
+$ gst-launch-1.0 v4l2src device=/dev/video0 ! video/x-raw, format=YUY2,width=640,height=480,frame=30/1 ! videoconvert ! autovideosink <br>
+<br>
+$ gst-launch-1.0 v4l2src device=/dev/video0 ! video/x-raw, format=YUY2,width=640,height=480,frame=30/1 ! videoconvert ! videoscale ! video/x-raw,width=800,height=480 ! autovideosink <br>
+
 ## RTSP Server under ubuntu 2020.04
 
 ##### enviromnent setup
